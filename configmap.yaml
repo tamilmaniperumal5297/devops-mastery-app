@@ -1,5 +1,5 @@
-apiversion: v1
-kind: configmap
+apiVersion: v1
+kind: ConfigMap
 metadata:
   name: app-config
 data:
