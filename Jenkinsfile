@@ -35,11 +35,11 @@ pipeline {
         stage('4. Deploy to Kubernetes Cluster') {
             steps {
                 echo 'Applying Kubernetes Manifests...'
-                sh 'kubectl apply -f k8s/configmap.yaml'
-                sh 'kubectl apply -f k8s/secret.yaml'
-                sh 'kubectl apply -f k8s/deployment.yaml'
-                sh 'kubectl apply -f k8s/service.yaml'
-                sh 'kubectl apply -f k8s/ingress.yaml'
+                sh 'kubectl apply -f configmap.yaml'
+                sh 'kubectl apply -f secret.yaml'
+                sh 'kubectl apply -f deployment.yaml'
+                sh 'kubectl apply -f service.yaml'
+                sh 'kubectl apply -f ingress.yaml'
                 sh "kubectl rollout restart deployment/devops-app-deployment"
             }
         }
