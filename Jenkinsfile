@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKER_HUB_USER = 'tamilmani5297'
         IMAGE_NAME      = 'devops-mastery-app'
-        REGISTRY_CRED   = 'dockerhub-credentials' // ID of credentials stored in Jenkins
+        REGISTRY_CRED   = 'docker-hub-credentials' // ID of credentials stored in Jenkins
     }
 
     stages {
