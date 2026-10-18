@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_HUB_USER = 'YOUR_DOCKERHUB_USERNAME'
+        DOCKER_HUB_USER = 'tamilmani5297'
         IMAGE_NAME      = 'devops-mastery-app'
         REGISTRY_CRED   = 'dockerhub-credentials' // ID of credentials stored in Jenkins
     }

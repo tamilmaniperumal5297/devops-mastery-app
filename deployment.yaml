@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: devops-app
-        image: Tamilmani5297/devops-mastery-app:latest
+        image: tamilmani5297/devops-mastery-app:latest
         ports:
         - containerPort: 5000
         envFrom:
